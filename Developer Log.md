@@ -60,7 +60,9 @@ but is there a scenario where not using it could create an issue?
 
 - On the basis that the test worked first time I haven't bothered to go back and add any **logging**, but were I to do this again I probably should include something like this:
 
-l_debug = ESS_LOG_WRITE('WSA_TEST' + to_char(WSA_TEST))
+```
+l_log = PAY_INTERNAL_LOG_WRITE('l_test: '||TO_CHAR(l_test))
+```
 
 ### Summary 
 

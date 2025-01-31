@@ -555,6 +555,7 @@ l_log = PAY_INTERNAL_LOG_WRITE('(GLBEARN) l_days : '||TO_CHAR(l_days))
 
   l_log = PAY_INTERNAL_LOG_WRITE('(GLBEARN) Derived value : '||TO_CHAR(l_value))
   
+  WSA_DELETE('WSA_TEST')
   l_test = 20
   WSA_SET('WSA_TEST', l_test)
 

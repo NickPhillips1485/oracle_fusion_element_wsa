@@ -33,6 +33,7 @@ L_AMOUNT = AMOUNT
 		IF (WSA_EXISTS('WSA_TEST', 'NUMBER')) THEN
 		(
 		l_value = L_AMOUNT + WSA_GET('WSA_TEST', 0)
+		WSA_DELETE('WSA_TEST')
 		)
 		ELSE
 		(
